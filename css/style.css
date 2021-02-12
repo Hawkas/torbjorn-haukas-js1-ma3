@@ -57,3 +57,11 @@
   font-family: Arial;
   text-decoration: underline;
 }
+.darker {
+  background-color: darkslategrey;
+  color: white;
+}
+.lighter {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 10px 15px 0 inset;
+}

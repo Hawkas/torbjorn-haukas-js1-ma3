@@ -30,7 +30,7 @@ function listObjects(list) {
     if (i === "8") break;
     let object = list[i];
     newHtml += `
-        <div class="game" style="background-color: ${i % 2 === 0 ? `darkslategrey; color: white` : "white"};">
+        <div class="game ${i % 2 === 0 ? "darker" : "lighter"}">
             <h2>${object.name ? object.name : "Name Unknown"}</h2>
             <p><strong>Rating: ${object.rating ? object.rating : "Unknown"}</strong></p>
             <p>Number of tags: ${Array.isArray(object.tags) ? object.tags.length : object.tags ? "1" : "N/A"}</p>
